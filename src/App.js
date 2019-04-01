@@ -1,26 +1,35 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+// eslint-disable-next-line no-unused-vars
+import $ from 'jquery';
+// eslint-disable-next-line no-unused-vars
+import Popper from 'popper.js';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import { BrowserRouter, Route } from 'react-router-dom';
+import Layout from './Layout';
+import Home from './Home';
+import Industries from './Industries';
+import Capabilities from './Capabilities';
+import Platforms from './Platforms';
+import Why from './Why';
+import Privacy from './Privacy';
+import Terms from './Terms';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <BrowserRouter>
+        <Layout>
+          <Route path="/" exact component={Home} />
+          <Route path="/industries" exact component={Industries} />
+          <Route path="/capabilities" exact component={Capabilities} />
+          <Route path="/platforms" exact component={Platforms} />
+          <Route path="/why" exact component={Why} />
+          <Route path="/privacy" exact component={Privacy} />
+          <Route path="/terms" exact component={Terms} />
+        </Layout>
+      </BrowserRouter>
     );
   }
 }
