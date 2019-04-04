@@ -59,7 +59,7 @@ export default class Layout extends Component {
                     <hr />
                     <section className="container">
                         <nav className="navbar navbar-expand-lg navbar-light">
-                            <div className="collapse navbar-collapse">
+                            <div className="navbar-collapse">
                                 <ul className="navbar-nav mr-auto">
                                     <li className="nav-item">
                                         <Link className="nav-item nav-link" to="/">Home</Link>
