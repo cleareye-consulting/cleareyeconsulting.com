@@ -78,7 +78,7 @@ export default class Layout extends Component {
                                     <img src={mailIcon} alt="email" />&nbsp;<a href="mailto:info@cleareyeconsulting.com">info@cleareyeconsulting.com</a>
                                 </span>
                                 <span className="navbar-text ml-3">
-                                    <img src={phoneIcon} alt="phone" />&nbsp;<span>423-651-0178</span>
+                                    <img src={phoneIcon} alt="phone" />&nbsp;<a href="tel:+1-423-651-0178">423-651-0178</a>
                                 </span>
                             </div>
                         </nav>
