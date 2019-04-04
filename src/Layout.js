@@ -65,7 +65,7 @@ export default class Layout extends Component {
                                         <Link className="nav-item nav-link" to="/">Home</Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-item nav-link" href="https://blog.cleareyeconsulting.com">Blog</a>
+                                        <a className="nav-item nav-link" target="_blank" rel="noopener noreferrer" href="https://medium.com/@jmgant.cleareyeconsulting">Blog</a>
                                     </li>
                                     <li className="nav-item">
                                         <Link className="nav-item nav-link" to="privacy">Privacy</Link>
