@@ -10,11 +10,11 @@ export default class Home extends Component {
             <React.Fragment>
                 <section>
                     <div className="jumbotron" style={{ backgroundColor: "#c7d7e4" }}>
-                        <div class="row">
-                            <div class="col-md-4">
+                        <div className="row">
+                            <div className="col-md-4">
                                 <img src={riverwalkImage} alt="Footpath bridge" style={{ maxWidth: "100%" }} />
                             </div>
-                            <div class="col-md-8">
+                            <div className="col-md-8">
                                 <h2>Is your business technology taking you where you want to go?</h2>
                                 <p className="lead">As your organization grows, processes that once were simple and manageable can gradually become unwieldy. Spreadsheets and databases that got you through the early days no longer meet your needs. Customer contacts get dropped. Milestones get missed. Regulatory compliance suddenly becomes a concern. Team members are frustrated. Execution of your core mission begins to suffer.</p>
                                 <p className="lead">Can we help? Quite possibly we can.</p>
