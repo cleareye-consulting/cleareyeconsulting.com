@@ -15,6 +15,7 @@ import Platforms from './Platforms';
 import Why from './Why';
 import Privacy from './Privacy';
 import Terms from './Terms';
+import Blog from './Blog';
 
 class App extends Component {
   render() {
@@ -26,6 +27,7 @@ class App extends Component {
           <Route path="/capabilities" exact component={Capabilities} />
           <Route path="/platforms" exact component={Platforms} />
           <Route path="/why" exact component={Why} />
+          <Route path="/blog" exact component={Blog} />
           <Route path="/privacy" exact component={Privacy} />
           <Route path="/terms" exact component={Terms} />
         </Layout>
