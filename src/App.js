@@ -8,26 +8,24 @@ import React, { Component } from 'react';
 import './App.scss';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Layout from './Layout';
+import ScrollToTop from './ScrollToTop';
 import Home from './Home';
-import Industries from './Industries';
-import Capabilities from './Capabilities';
-import Platforms from './Platforms';
-import Why from './Why';
 import Privacy from './Privacy';
 import Terms from './Terms';
-import Blog from './Blog';
+import Approach from './Approach';
+import About from './About';
+import Services from './Services';
 
 class App extends Component {
   render() {
     return (
       <BrowserRouter>
+        <ScrollToTop/>
         <Layout>
           <Route path="/" exact component={Home} />
-          <Route path="/industries" exact component={Industries} />
-          <Route path="/capabilities" exact component={Capabilities} />
-          <Route path="/platforms" exact component={Platforms} />
-          <Route path="/why" exact component={Why} />
-          <Route path="/blog" exact component={Blog} />
+          <Route path="/services" exact component={Services}/>
+          <Route path="/approach" exact component={Approach} />
+          <Route path="/about" exact component={About}/>          
           <Route path="/privacy" exact component={Privacy} />
           <Route path="/terms" exact component={Terms} />
         </Layout>

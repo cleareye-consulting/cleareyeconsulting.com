@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import cogImage from './assets/images/cog.svg';
-import browserImage from './assets/images/browser_layout_1.svg';
-import trainingAndDocImage from './assets/images/presentation.svg';
+import { Link } from 'react-router-dom';
 import riverwalkImage from './assets/images/riverwalk-bridge-square.png';
 
 export default class Home extends Component {
@@ -22,32 +20,14 @@ export default class Home extends Component {
                         </div>
                     </div>
                 </section>
-                <hr />
                 <section className="body-section">
-                    <div className="row">
-                        <div className="col-md-4 text-center">
-                            <img src={cogImage} alt="Gear" />
-                            <h4>Business Process Consulting</h4>
-                            <p>
-                                Even the best technology won't fix a broken process. So we start by making sure you've got the right discipline and shared knowledge around your processes, then move on to the tooling to make those processes work even better.
-                            </p>
-                        </div>
-                        <div className="col-md-4 text-center">
-                            <img src={browserImage} alt="Browser" />
-                            <h4>Custom Development</h4>
-                            <p>
-                                From minor changes and maintenance to full-blown stand-alone applications, web, intranet, Windows, batch, legacy, database, integration, services, you name it; we've got the experience and skills to build the tools your business needs.
-                            </p>
-                        </div>
-                        <div className="col-md-4 text-center">
-                            <img src={trainingAndDocImage} alt="Documentation" />
-                            <h4>Documentation and Training</h4>
-                            <p>
-                                We offer documentation and training for our own applications, of course. But we can also help you capture organizational knowledge of your existing systems, and train your support personnel to administer them effectively.
-                            </p>
-                        </div>
-                    </div>
+                    <h3>How Can ClearEye Help You?</h3>
+                    <p>ClearEye Consulting is a software development and business technology consulting firm located in Chattanooga, Tennessee. We provide custom software and consulting services to small and medium-sized businesses (SMBs). Learn more about <Link to="about">who we are</Link>.</p>
+                    <p>Our 20+ years of technology experience have spanned a variety of industries and disciplines, including manufacturing, quality control, safety, and all aspects of healthcare IT. We specialize in helping our clients address their current technology challenges so that they can stay on the path to continued success. Learn more about <Link to="services">what we do</Link> and <Link to="approach">how we do it</Link>.</p>
+                    <p>Chattanooga is the perfect location for a business like ours. Besides having some of the best scenery anywhere, we are within easy driving distance of Atlanta, Nashville, Knoxville, Birmingham, and Huntsville. And with some of the nation's fastest Internet service, we can easily serve clients throughout the US.</p>
+                    <p>Call us or email us today for an initial consultation. Or keep in touch on social media. We'd love to hear from you!</p>                    
                 </section>
+
             </React.Fragment>
 
         )

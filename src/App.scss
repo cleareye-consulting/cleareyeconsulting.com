@@ -14,6 +14,8 @@ $cleareye-blue: #3e6282;
 $split-complement-light-green: #ebead4;
 $cleareye-blue-darker: #2b445a;
 $cleareye-blue-lighter: #c7d7e4;
+$header-font-family: 'Questrial', sans-serif;
+$body-font-family: 'Open Sans', sans-serif;
 
 $theme-colors: (
   "primary": $cleareye-blue,
@@ -28,11 +30,19 @@ section.blurb {
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Questrial', sans-serif
+  font-family: $header-font-family;
+}
+
+.header6 {
+  font-family: $body-font-family;
+  font-weight: bold;
+  font-size: 1rem;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $body-font-family;
 }
 
 section.body-section {
@@ -40,14 +50,33 @@ section.body-section {
   margin-top: 2rem;
   margin-bottom: 2rem;
   p {
-    font-size: .85rem;
+    font-size: 1rem;
   }
-  h4{
+  h3, h4{
     color: $cleareye-blue;
   }
 }
 section.alternate-section {
   background-color: $split-complement-light-green;
+}
+
+a:link {
+  color: $cleareye-blue;  
+}
+
+a:hover {
+  text-decoration: underline;
+  color: $cleareye-blue;
+}
+
+a:visited {
+  color: $cleareye-blue;
+}
+
+#navbar-banner {
+  font-family: $header-font-family;
+  font-size: 2rem;
+  color: $cleareye-blue;
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap";

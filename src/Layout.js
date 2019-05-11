@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import logo from './assets/images/logo.svg';
+import logo from './assets/images/favicon.svg';
 import mailIcon from './assets/images/mail.svg';
 import phoneIcon from './assets/images/phone.svg';
+import facebookIcon from './assets/images/facebook_1.svg';
+import twitterIcon from './assets/images/twitter.svg';
+import linkedInIcon from './assets/images/linkedin.svg';
 
 export default class Layout extends Component {
     render() {
@@ -10,62 +13,39 @@ export default class Layout extends Component {
             <div className="container">
                 <header>
                     <nav className="navbar navbar-expand-lg navbar-light bg-none">
-                        <Link className="navbar-brand" to="/">
-                            <img src={logo} height="175" width="200" alt="ClearEye Consulting" />
+                        <Link className="navbar-brand mr-5" to="/" id="navbar-banner">
+                            <img src={logo} height="65" alt="ClearEye Consulting" /> ClearEye Consulting
                         </Link>
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav mr-auto">
-                                <li className="nav-item">
-                                    <Link className="nav-link text-primary" to="capabilities">Capabilities</Link>
+                                <li className="nav-item mr-3">
+                                    <Link className="nav-link text-primary" to="services">Services</Link>
                                 </li>
-                                <li className="nav-item">
-                                    <Link className="nav-link text-primary" to="platforms">Platforms</Link>
+                                <li className="nav-item mr-3">
+                                    <Link className="nav-link text-primary" to="approach">Approach</Link>
                                 </li>
-                                <li className="nav-item">
-                                    <Link className="nav-link text-primary" to="industries">Industries</Link>
-                                </li>
-                                <li className="nav-item">
-                                    <Link className="nav-link text-primary" to="why">Why Choose ClearEye?</Link>
+                                <li className="nav-item mr-3">
+                                    <Link className="nav-link text-primary" to="about">About</Link>
                                 </li>
                             </ul>
                         </div>
                     </nav>
-
                 </header>
-                <hr />
                 <main>
                     <div className="container">
                         {this.props.children}
                     </div>
                 </main>
                 <footer className="bg-light">
-                    <section className="my-3 py-3">
-                        <div className="container">
-                            <div className="row">
-                                <div className="col col-md-8">
-                                    <h3>Let's talk!</h3>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col">
-                                    We offer an initial consultation at no charge. Are you within a couple of hours of Chattanooga (Atlanta, Nashville, Knoxville, Huntsville, Birmingham)?  We'd be happy to drive out to your office. Otherwise, we'll set up a video call at a time that works for you.
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <hr />
                     <section className="container">
                         <nav className="navbar navbar-expand-lg navbar-light">
                             <div className="navbar-collapse">
                                 <ul className="navbar-nav mr-auto">
                                     <li className="nav-item">
                                         <Link className="nav-item nav-link" to="/">Home</Link>
-                                    </li>
-                                    <li className="nav-item">
-                                        <Link className="nav-item nav-link" to="/blog">Blog</Link>
                                     </li>
                                     <li className="nav-item">
                                         <Link className="nav-item nav-link" to="/privacy">Privacy</Link>
@@ -79,6 +59,15 @@ export default class Layout extends Component {
                                 </span>
                                 <span className="navbar-text ml-3">
                                     <img src={phoneIcon} alt="phone" />&nbsp;<a href="tel:+1-423-651-0178">423-651-0178</a>
+                                </span>
+                                <span className="navbar-text ml-3">
+                                    <a href="https://www.facebook.com/cleareyeconsulting" target="_blank" rel="noopener noreferrer"><img width="24" height="24" src={facebookIcon} alt="facebook"></img></a>
+                                </span>
+                                <span className="navbar-text ml-3">
+                                    <a href="https://twitter.com/ClearEyeCnsltg" target="_blank" rel="noopener noreferrer"><img width="24" height="24" src={twitterIcon} alt="facebook"></img></a>
+                                </span>
+                                <span className="navbar-text ml-3">
+                                    <a href="https://www.linkedin.com/company/cleareyeconsulting/" target="_blank" rel="noopener noreferrer"><img width="24" height="24" src={linkedInIcon} alt="facebook"></img></a>
                                 </span>
                             </div>
                         </nav>
