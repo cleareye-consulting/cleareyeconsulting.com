@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import globeIcon from './assets/images/globe.svg';
 import databaseIcon from './assets/images/database.svg';
 import computerIcon from './assets/images/imac.svg';
@@ -7,7 +8,7 @@ import tapeIcon from './assets/images/voicemail.svg';
 
 export default class Services extends Component {
     render() {
-        return(
+        return (
             <React.Fragment>
                 <h2>What We Do</h2>
                 <p>ClearEye Consulting is a software development and business technology consulting firm serving small and medium-sized businesses. What, exactly, do we mean by that?</p>
@@ -42,7 +43,7 @@ export default class Services extends Component {
                         <p className="header6">Batch processing</p>
                         <p>Batch processing is unglamorous, but it makes the world go 'round. We can help you automate your day-to-day processes, and also possibly help you modernize your existing batch runs.</p>
                     </div>
-                </div>                                   
+                </div>
                 <div className="row">
                     <div className="col-md-1">
                         <img src={databaseIcon} alt="Database" />
@@ -64,9 +65,9 @@ export default class Services extends Component {
                 <h4>Specialty Services</h4>
                 <p><strong>MS Access Upgrades. </strong>We don't really use Microsoft Access to build new things, or necessarily recommend its use (see <a href="https://medium.com/@jmgant.cleareyeconsulting/concerning-microsoft-access-26d3308fece0?source=friends_link&sk=09e2c5b4c00775fea9d6d2ae271cc9c7" target="_blank" rel="noopener noreferrer">this article</a> for more discussion). But we have a lot of experience helping small business and organizations evaluate their existing Access investments and plot a course toward a more permanent solution. If you're reaching the limits of Access, give us a call!</p>
                 <p><strong>Legacy System Updates. </strong>If your small to medium-sized business has been in operation for a decade or two, it's very possible that you've got an old AS400 or System i box that's running your core operational software (often called ERP for "Enterprise Resource Planning"). If that box in the corner is limiting your growth, we know <a href="https://medium.com/@jmgant.cleareyeconsulting/how-to-replace-your-old-as400-erp-without-wrecking-your-operations-26e442b46151?source=friends_link&sk=4ccb67dc822fcf14b76ada19a277056a" target="_blank" rel="noopener nofollower">a thing or two</a> about helping you update.</p>
-                <p><strong>Custom Quality Control Systems. </strong>If your business involves building something, likely you've given a lot of thought to how to make sure you're building it correctly. You probably even have some kind of a system for tracking your quality metrics. If you don't, or if it's not working well, we can help. We helped a first-tier supplier to several major automotive OEMs streamline and improve their quality software, and we can help you as well!</p>
+                <p><strong>Custom Quality Control Systems. </strong>If your business involves building something, likely you've given a lot of thought to how to make sure you're building it correctly. You probably even have some kind of a system for tracking your quality metrics. If you don't, or if it's not working well, we can help. We helped a first-tier supplier to several major automotive OEMs streamline and improve their quality software (case study <Link to="/content/case-studies/NameWithheld">here</Link>), and we can help you as well!</p>
 
-                
+
             </React.Fragment>
         );
     }
