@@ -15,19 +15,21 @@ import Terms from './Terms';
 import Approach from './Approach';
 import About from './About';
 import Services from './Services';
+import NameWithheld from './content/case-studies/NameWithheld';
 
 class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <ScrollToTop/>
+        <ScrollToTop />
         <Layout>
           <Route path="/" exact component={Home} />
-          <Route path="/services" exact component={Services}/>
+          <Route path="/services" exact component={Services} />
           <Route path="/approach" exact component={Approach} />
-          <Route path="/about" exact component={About}/>          
+          <Route path="/about" exact component={About} />
           <Route path="/privacy" exact component={Privacy} />
           <Route path="/terms" exact component={Terms} />
+          <Route path="/content/case-studies/NameWithheld" exact component={NameWithheld} />
         </Layout>
       </BrowserRouter>
     );
