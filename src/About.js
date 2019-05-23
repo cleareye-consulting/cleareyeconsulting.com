@@ -22,7 +22,8 @@ export default class About extends Component {
               <p><a href="https://medium.com/@jmgant.cleareyeconsulting/languages-ive-learned-or-not-living-legacy-1f72e8c44ed5?source=friends_link&sk=624afd97b40877c449459b51e198957f" target="_blank" rel="noopener noreferrer">Languages I've Learned, or Not&mdash;Living Legacy</a> talks about his experience with Cobol and some other things he never expected to learn.</p>
               <p>In <a href="https://medium.com/@jmgant.cleareyeconsulting/languages-ive-learned-or-not-oriented-objectively-5b50aac27161?source=friends_link&sk=da7d1b8068ff995fdf457d53a0ee602d" target="_blank" rel="noopener noreferrer">Languages I've Learned, or Not&mdash;Oriented Objectively</a>, Michael shares some thoughts about object-oriented languages, including Java, C#, and C++. VB6 is in there as well. And some thought on the future of object-oriented programming, especially in JavaScript.</p>
               <p><a href="https://medium.com/@jmgant.cleareyeconsulting/languages-ive-learned-or-not-web-1-0-90ee0df3c7a7?source=friends_link&sk=45984c9041fd85071fdb3a5630155158" target="_blank" rel="noopener noreferrer">Languages I've Learned, or Not&mdash;Web 1.0</a> is a review of the first 15 years or so of Michael's work with web technologies, including ASP and ASP.NET, as well as Java and, of course, JavaScript.</p>
-          </React.Fragment>  
+	      <p><a href="https://medium.com/@jmgant.cleareyeconsulting/languages-ive-learned-or-not-rethinking-php-slightly-517803913e44?source=friends_link&sk=87da6bc29db8317e4e50c642e18af81d" target="_blank" rel="noopener noreferrer">Languages I've Learned, or Not&mdash;Rethinking PHP, Slightly</a> gives some further thoughts on the relevance of PHP in modern web development.</p>
+		</React.Fragment>  
         );
     }
 }
