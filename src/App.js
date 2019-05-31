@@ -16,6 +16,7 @@ import Approach from './Approach';
 import About from './About';
 import Services from './Services';
 import NameWithheld from './content/case-studies/NameWithheld';
+import QMEssentials from './QMEssentials';
 
 class App extends Component {
   render() {
@@ -30,6 +31,7 @@ class App extends Component {
           <Route path="/privacy" exact component={Privacy} />
           <Route path="/terms" exact component={Terms} />
           <Route path="/content/case-studies/NameWithheld" exact component={NameWithheld} />
+          <Route path="/content/qmessentials" exact component={QMEssentials}/>
         </Layout>
       </BrowserRouter>
     );

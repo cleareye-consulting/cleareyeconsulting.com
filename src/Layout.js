@@ -22,13 +22,13 @@ export default class Layout extends Component {
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav mr-auto">
                                 <li className="nav-item mr-3">
-                                    <Link className="nav-link text-primary" to="services">Services</Link>
+                                    <Link className="nav-link text-primary" to="/services">Services</Link>
                                 </li>
                                 <li className="nav-item mr-3">
-                                    <Link className="nav-link text-primary" to="approach">Approach</Link>
+                                    <Link className="nav-link text-primary" to="/approach">Approach</Link>
                                 </li>
                                 <li className="nav-item mr-3">
-                                    <Link className="nav-link text-primary" to="about">About</Link>
+                                    <Link className="nav-link text-primary" to="/about">About</Link>
                                 </li>
                             </ul>
                         </div>
