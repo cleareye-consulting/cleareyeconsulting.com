@@ -9,7 +9,7 @@ import tapeIcon from './assets/images/voicemail.svg';
 export default class Services extends Component {
     render() {
         return (
-            <React.Fragment>
+            <React.Fragment>                
                 <h2>What We Do</h2>
                 <p>ClearEye Consulting is a software development and business technology consulting firm serving small and medium-sized businesses. What, exactly, do we mean by that?</p>
                 <h4>Business Technology Consulting</h4>

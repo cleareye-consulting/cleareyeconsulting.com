@@ -1,13 +1,21 @@
 import React, { Component } from 'react'
+import qmessentialsLogo from '../src/assets/images/qmessentials-logo.svg'
 
 export default class QMEssentials extends Component {
     render() {
         return (
             <React.Fragment>
                 <h2>QMEssentials</h2>
-                <p>QMEssentials is a simple quality management application designed for small to medium-sized businesses who make things.</p>                
-                <p><strong>QMEssentials is free and open-source software licensed under the MIT license. You can download and use or modify QMEssentials at no charge. You can also view the <a href="https://github.com/cleareye-consulting/qmessentials"> source code.</a></strong></p>
-                <p>QMEssentials comes in three "sizes".</p>
+                <div className="row">
+                    <div class="col-md-2">
+                        <img src={qmessentialsLogo} alt="Q M Essentials logo"/>
+                    </div>
+                    <div class="col-md-10">
+                        <p>QMEssentials is a simple quality management application designed for small to medium-sized businesses who make things.</p>                
+                        <p><strong>QMEssentials is free and open-source software licensed under the MIT license. You can download and use or modify QMEssentials at no charge. You can also view the <a href="https://github.com/cleareye-consulting/qmessentials"> source code.</a></strong></p>
+                        <p>QMEssentials comes in three "sizes".</p>
+                    </div>
+                </div>
                 <table class="table">
                     <thead>
                         <tr>
