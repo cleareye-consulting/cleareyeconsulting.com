@@ -15,7 +15,7 @@ export default class Approach extends Component {
                 <p>In any case, before you're billed for any hours or for a two-week iteration, we'll get your approval on a Master Services Agreement to govern our interactions. There won't be any surprise bills.</p>
                 <h4>The power of flexibility</h4>
                 <p>We've found our iterative approach to be highly productive and cost-effective. It works well for us, and it provides good value and low risk for our clients.</p>
-                <p>At the same time, we understand that strategic IT investments often involve a number of decision-makers, and this approach may be unfamiliar to some who have only ever done fixed-cost or T&amp;M engagements. Because we're a small-scale operation, we're able to adjust our methodology to work work your needs.</p>
+                <p>At the same time, we understand that strategic IT investments often involve a number of decision-makers, and this approach may be unfamiliar to some who have only ever done fixed-cost or T&amp;M engagements. Because we're a small-scale operation, we're able to adjust our methodology to work with your needs.</p>
                 <h4>Additional Reading</h4>
                 <p>Most of our engagements involve only a single developer. In <a href="https://medium.com/@jmgant.cleareyeconsulting/scrum-and-the-solo-dev-fb8e810ed42b?source=friends_link&sk=bcca472174f8877596be5d2e447f3699" target="_blank" rel="noopener noreferrer">Scrum and the Solo Dev</a>, our principal consultant discusses the application of Agile development principles, particularly Scrum, to working in solo-developer mode.</p>
             </React.Fragment>
