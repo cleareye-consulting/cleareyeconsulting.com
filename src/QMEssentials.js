@@ -12,7 +12,7 @@ export default class QMEssentials extends Component {
                     </div>
                     <div class="col-md-10">
                         <p>QMEssentials is a simple quality management application designed for small to medium-sized businesses who make things.</p>
-                        <p><strong>QMEssentials is free and open-source software licensed under the MIT license. You can download and use or modify QMEssentials at no charge.</strong> You can also view the <a href="https://github.com/cleareye-consulting/qmessentials"> source code</a> or a <a href="https://youtu.be/RGTTwsz7sy0">brief overview video.</a></p>
+                        <p><strong>QMEssentials is free and open-source software licensed under the MIT license. You can download and use or modify QMEssentials at no charge.</strong> You can also view the <a href="https://github.com/cleareye-consulting/qmessentials"> source code</a>.</p>
                         <p>QMEssentials comes in three "sizes".</p>
                     </div>
                 </div>
@@ -70,7 +70,8 @@ export default class QMEssentials extends Component {
                         </tr>
                     </tbody>
                 </table>
-
+                <h4>Want to learn more? Here's a brief overview and demo:</h4>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/RGTTwsz7sy0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
             </React.Fragment>
