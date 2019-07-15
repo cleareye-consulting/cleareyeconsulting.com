@@ -4,7 +4,7 @@ export default () => {
     return (
         <>
             <h2>Microsoft Access and Excel Migration FAQ</h2>
-            <p>Many business large and small use Microsoft Excel to keep track of all kinds of business-related information. Some have taken the next step by putting their data in a Microsoft Access application. This is a common approach but it often leads to problems. If you're experiencing these problems, here a few frequently asked questions about migrating off Excel and Access. We hope you find this helpful.</p>
+            <p>Many business large and small use Microsoft Excel to keep track of all kinds of business-related information. Some have taken the next step by putting their data in a Microsoft Access application. This is a common approach but it often leads to problems. If you're experiencing these problems, here are a few frequently asked questions about migrating off Excel and Access. We hope you find this helpful.</p>
             
             <h4>1. Why should I be thinking of moving my business-critical data out of Excel?</h4>
             <p>Excel is designed to make it easy for you to manipulate and analyze data. But it's not designed to be the primary (or only) place where your data is stored. It's just too easy to change or delete it from there. And if more than one person needs to access the data at the same time, that's possible with Excel, but it's difficult and risky.</p>
