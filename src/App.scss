@@ -60,17 +60,17 @@ section.alternate-section {
   background-color: $split-complement-light-green;
 }
 
-a:link {
-  color: $cleareye-blue;  
+a:link {  
+  color: #4E7CA5;
 }
 
 a:hover {
   text-decoration: underline;
-  color: $cleareye-blue;
+  color: $cleareye-blue-lighter;
 }
 
 a:visited {
-  color: $cleareye-blue;
+  color: #4E7CA5;
 }
 
 #navbar-banner {
