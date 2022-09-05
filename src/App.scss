@@ -1,12 +1,3 @@
-@import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/mixins";
-@import "../node_modules/bootstrap/scss/reboot";
-@import "../node_modules/bootstrap/scss/type";
-@import "../node_modules/bootstrap/scss/images";
-@import "../node_modules/bootstrap/scss/code";
-@import "../node_modules/bootstrap/scss/grid";
-
 @import url('https://fonts.googleapis.com/css?family=Questrial');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
@@ -17,12 +8,9 @@ $cleareye-blue-lighter: #c7d7e4;
 $header-font-family: 'Questrial', sans-serif;
 $body-font-family: 'Open Sans', sans-serif;
 
-$theme-colors: (
-  "primary": $cleareye-blue,
-  "light": $split-complement-light-green,
-  "dark": $cleareye-blue-darker
-
-);
+$primary: $cleareye-blue;
+$light: $cleareye-blue-lighter;
+$dark: $cleareye-blue-darker;
 
 section.blurb {
   background-color: $cleareye-blue-lighter;
