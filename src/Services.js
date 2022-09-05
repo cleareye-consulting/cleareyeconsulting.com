@@ -1,10 +1,5 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import globeIcon from './assets/images/globe.svg'
-import databaseIcon from './assets/images/database.svg'
-import computerIcon from './assets/images/imac.svg'
-import cloudIcon from './assets/images/cloud.svg'
-import tapeIcon from './assets/images/voicemail.svg'
 
 export default class Services extends Component {
   render() {

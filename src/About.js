@@ -22,11 +22,11 @@ export default class About extends Component {
         <p>
           The founder and principal consultant of ClearEye Consulting, Michael Gant, has been developing software commercially for over 20
           years. Check out&nbsp;
-          <a href="https://www.linkedin.com/in/john-michael-gant/" target="_blank">
+          <a href="https://www.linkedin.com/in/john-michael-gant/" target="_blank" rel="noreferrer">
             Michael's LinkedIn page
           </a>
           &nbsp; to learn more about his career. Or read some of his articles on{' '}
-          <a href="https://medium.com/@jmgant.cleareyeconsulting" target="_blank">
+          <a href="https://medium.com/@jmgant.cleareyeconsulting" target="_blank" rel="noreferrer">
             Medium
           </a>
           .

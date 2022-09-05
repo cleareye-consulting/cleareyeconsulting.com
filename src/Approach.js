@@ -16,6 +16,7 @@ export default class Approach extends Component {
           <a
             href="https://medium.com/@jmgant.cleareyeconsulting/scrum-and-the-solo-dev-fb8e810ed42b?source=friends_link&sk=bcca472174f8877596be5d2e447f3699"
             target="_blank"
+            rel="noreferrer"
           >
             Scrum
           </a>{' '}
