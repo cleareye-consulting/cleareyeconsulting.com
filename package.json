@@ -1,32 +1,17 @@
 {
-  "name": "cleareyeconsulting.com-react2",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "bootstrap": "^5.2.0",
-    "node-sass": "^7.0.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "^5.0.1"
-  },
+  "name": "cleareyeconsulting.com-v4",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
-  "devDependencies": {
-    "jquery": "^3.3.1",
-    "popper.js": "^1.14.7",
-    "react-router-dom": "^5.0.0"
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.18",
+    "astro": "^5.17.1",
+    "sharp": "^0.34.5",
+    "tailwindcss": "^4.1.18"
   }
 }

@@ -1,0 +1,74 @@
+---
+import { Image } from 'astro:assets';
+import logo from '../assets/images/logo.svg';
+import mailIcon from '../assets/images/mail.svg';
+import phoneIcon from '../assets/images/phone.svg';
+import facebookIcon from '../assets/images/facebook_1.svg';
+import twitterIcon from '../assets/images/twitter.svg';
+import linkedInIcon from '../assets/images/linkedin.svg';
+---
+
+<header class="container mx-auto px-4 py-6">
+  <nav class="flex items-center justify-between">
+    <a href="/" class="flex items-center gap-4 text-2xl font-semibold text-slate-800">
+      <Image src={logo} alt="ClearEye Consulting" height={64} class="w-auto h-16" />
+      <div class="flex flex-col">
+        <span>ClearEye Consulting</span>
+        <span class="text-xs font-normal text-slate-500 uppercase tracking-wider">Custom Software Development</span>
+      </div>
+    </a>
+    
+    <button class="lg:hidden p-2 text-slate-600" aria-label="Toggle navigation">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+      </svg>
+    </button>
+
+    <ul class="hidden lg:flex items-center gap-8">
+      <li><a href="/services" class="text-brand-blue hover:text-brand-blue-dark font-medium">Services</a></li>
+      <li><a href="/approach" class="text-brand-blue hover:text-brand-blue-dark font-medium">Approach</a></li>
+      <li><a href="/about" class="text-brand-blue hover:text-brand-blue-dark font-medium">About</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="container mx-auto px-4 py-8">
+  <slot />
+</main>
+
+<footer class="bg-slate-50 border-t border-slate-200 mt-auto">
+  <div class="container mx-auto px-4 py-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div class="flex flex-wrap gap-4">
+        <a href="/" class="text-brand-blue hover:text-brand-blue-dark font-medium">Home</a>
+        <a href="/privacy" class="text-brand-blue hover:text-brand-blue-dark font-medium">Privacy</a>
+        <a href="/terms" class="text-brand-blue hover:text-brand-blue-dark font-medium">Terms</a>
+      </div>
+      
+      <div class="flex flex-col md:items-end gap-3 text-slate-600">
+        <div class="flex items-center gap-2">
+          <Image src={mailIcon} alt="email" width={20} />
+          <a href="mailto:info@cleareyeconsulting.com" class="hover:text-brand-blue transition-colors">info@cleareyeconsulting.com</a>
+        </div>
+        <div class="flex items-center gap-2">
+          <Image src={phoneIcon} alt="phone" width={20} />
+          <a href="tel:+1-423-651-0178" class="hover:text-brand-blue transition-colors">423-651-0178</a>
+        </div>
+        <div class="flex gap-4 mt-2">
+          <a href="https://www.facebook.com/cleareyeconsulting" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity">
+            <Image src={facebookIcon} alt="facebook" width={24} height={24} />
+          </a>
+          <a href="https://twitter.com/ClearEyeCnsltg" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity">
+            <Image src={twitterIcon} alt="twitter" width={24} height={24} />
+          </a>
+          <a href="https://www.linkedin.com/company/cleareyeconsulting/" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity">
+            <Image src={linkedInIcon} alt="linkedin" width={24} height={24} />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-slate-900 text-slate-300 py-4 text-center text-sm">
+    Copyright &copy; {new Date().getFullYear()} ClearEye Consulting, LLC
+  </div>
+</footer>
