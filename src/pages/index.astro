@@ -1,0 +1,43 @@
+---
+import Layout from '../layouts/Layout.astro';
+import background from '../assets/images/banner-background.svg';
+---
+
+<Layout>
+	<section class="relative py-12 md:py-24 overflow-hidden">
+		<div class="absolute inset-0 -z-10">
+			<img src={background.src} alt="" class="w-full h-full object-cover opacity-10" />
+		</div>
+		<div class="max-w-4xl relative z-10 pl-8">
+			<h1 class="text-4xl md:text-6xl font-bold text-slate-900 leading-tight mb-6">
+				Custom Software for Small & Medium Businesses
+			</h1>
+			<p class="text-xl text-slate-600 mb-8 leading-relaxed">
+				We build custom digital solutions tailored to your unique business needs. We use the latest tools—including AI—to work efficiently, but the architecture of your system is bespoke. Every line is vetted, every edge case is considered, and the final product is a hand-finished tool, not a generated guess.
+			</p>
+			<div class="flex flex-wrap gap-4">
+				<a href="/services" class="bg-brand-blue text-white px-8 py-3 rounded-lg font-semibold hover:bg-brand-blue-dark transition-colors">
+					Our Services
+				</a>
+				<a href="/approach" class="bg-white text-brand-blue border border-brand-blue px-8 py-3 rounded-lg font-semibold hover:bg-slate-50 transition-colors">
+					How We Work
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="grid grid-cols-1 md:grid-cols-3 gap-8 py-12">
+		<div class="p-6 border border-slate-100 rounded-xl bg-slate-50">
+			<h3 class="text-xl font-bold mb-3">Solve Complexity</h3>
+			<p class="text-slate-600">We turn tangled spreadsheets and fragmented processes into streamlined, reliable software systems.</p>
+		</div>
+		<div class="p-6 border border-slate-100 rounded-xl bg-slate-50">
+			<h3 class="text-xl font-bold mb-3">Scale Efficiently</h3>
+			<p class="text-slate-600">Automate repetitive tasks so your team can focus on high-value work instead of manual data entry.</p>
+		</div>
+		<div class="p-6 border border-slate-100 rounded-xl bg-slate-50">
+			<h3 class="text-xl font-bold mb-3">Secure Your Future</h3>
+			<p class="text-slate-600">Modernize aging applications to improve security, performance, and maintainability for the long haul.</p>
+		</div>
+	</section>
+</Layout>
