@@ -17,6 +17,9 @@ const { Content } = await post.render();
 ---
 
 <Layout>
+	{post.data.canonical && (
+		<link slot="head" rel="canonical" href={post.data.canonical} />
+	)}
 	<article class="max-w-3xl mx-auto">
 		<div class="mb-8">
 			<a href="/blog" class="text-brand-blue hover:text-brand-blue-dark font-medium inline-flex items-center gap-1 mb-8">
@@ -44,25 +47,36 @@ const { Content } = await post.render();
 			</h1>
 			
 			{post.data.heroImage && (
-				<div class="rounded-2xl overflow-hidden mb-10 shadow-lg">
-					<Image 
-						src={post.data.heroImage} 
-						alt="" 
-						width={1200} 
-						height={675} 
-						class="w-full h-auto"
-					/>
+				<div class="mb-10">
+					<div class="rounded-2xl overflow-hidden shadow-lg">
+						<Image
+							src={post.data.heroImage}
+							alt=""
+							width={1200}
+							height={675}
+							class="w-full h-auto"
+						/>
+					</div>
+					{post.data.photoCredit && (
+						<p class="text-sm text-slate-500 mt-2 text-center" set:html={post.data.photoCredit} />
+					)}
 				</div>
 			)}
 		</div>
 
-		<div class="prose prose-slate prose-lg max-w-none 
+		<div class="prose prose-slate prose-lg max-w-none
 			prose-headings:text-slate-900 prose-headings:font-bold
 			prose-a:text-brand-blue hover:prose-a:text-brand-blue-dark
 			prose-strong:text-slate-900
 			prose-img:rounded-xl">
 			<Content />
 		</div>
+
+		{post.data.canonical && (
+			<p class="mt-12 text-sm text-slate-500 italic">
+				Originally published on <a href={post.data.canonical} class="text-brand-blue hover:text-brand-blue-dark">Medium</a>.
+			</p>
+		)}
 
 		<footer class="mt-16 pt-8 border-t border-slate-200">
 			<div class="bg-slate-50 rounded-2xl p-8 text-center">
