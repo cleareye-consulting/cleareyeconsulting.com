@@ -1,0 +1,104 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+
+const audiences = ['All', 'Business', 'Developer', 'General'];
+---
+
+<Layout>
+	<div class="max-w-4xl mx-auto">
+		<header class="mb-12">
+			<h1 class="text-4xl font-bold text-slate-900 mb-4">Blog</h1>
+			<p class="text-xl text-slate-600">Insights on software development, business strategy, and technology.</p>
+		</header>
+
+		<!-- Audience Filter -->
+		<div class="flex flex-wrap gap-2 mb-12" id="filter-buttons">
+			{audiences.map((audience) => (
+				<button
+					data-audience={audience}
+					class="px-4 py-2 rounded-full border border-slate-200 text-slate-600 hover:border-brand-blue hover:text-brand-blue transition-colors cursor-pointer data-[active=true]:bg-brand-blue data-[active=true]:text-white data-[active=true]:border-brand-blue"
+					data-active={audience === 'All'}
+				>
+					{audience}
+				</button>
+			))}
+		</div>
+
+		<div class="grid gap-12" id="posts-grid">
+			{posts.map((post) => (
+				<article class="group blog-post" data-audience={post.data.audience}>
+					<a href={`/blog/${post.slug}/`} class="grid md:grid-cols-2 gap-8 items-start">
+						{post.data.heroImage && (
+							<div class="overflow-hidden rounded-xl bg-slate-100">
+								<Image 
+									src={post.data.heroImage} 
+									alt="" 
+									width={800} 
+									height={450} 
+									class="object-cover w-full aspect-video group-hover:scale-105 transition-transform duration-300"
+								/>
+							</div>
+						)}
+						<div class="flex flex-col">
+							<div class="flex items-center gap-3 mb-3">
+								<span class="text-xs font-bold uppercase tracking-wider text-brand-blue bg-blue-50 px-2 py-1 rounded">
+									{post.data.audience}
+								</span>
+								<time datetime={post.data.pubDate.toISOString()} class="text-sm text-slate-500">
+									{post.data.pubDate.toLocaleDateString('en-us', {
+										year: 'numeric',
+										month: 'short',
+										day: 'numeric',
+									})}
+								</time>
+							</div>
+							<h2 class="text-2xl font-bold text-slate-900 group-hover:text-brand-blue transition-colors mb-3">
+								{post.data.title}
+							</h2>
+							<p class="text-slate-600 leading-relaxed mb-4">
+								{post.data.description}
+							</p>
+							<span class="text-brand-blue font-semibold inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+								Read article 
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+								</svg>
+							</span>
+						</div>
+					</a>
+				</article>
+			))}
+		</div>
+	</div>
+</Layout>
+
+<script>
+	const buttons = document.querySelectorAll('#filter-buttons button');
+	const posts = document.querySelectorAll('.blog-post');
+
+	buttons.forEach(button => {
+		button.addEventListener('click', () => {
+			const selectedAudience = button.getAttribute('data-audience');
+			
+			// Update button styles
+			buttons.forEach(btn => btn.setAttribute('data-active', 'false'));
+			button.setAttribute('data-active', 'true');
+
+			// Filter posts
+			posts.forEach(post => {
+				const postAudience = post.getAttribute('data-audience');
+				if (selectedAudience === 'All' || postAudience === selectedAudience) {
+					(post as HTMLElement).style.display = 'block';
+				} else {
+					(post as HTMLElement).style.display = 'none';
+				}
+			});
+		});
+	});
+</script>
