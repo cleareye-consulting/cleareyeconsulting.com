@@ -1,11 +1,11 @@
 ---
 title: "What is 'Business Value'?"
-description: "Various sources of business value and ways of measuring it."
-pubDate: "2026-02-10"
-audience: "Business"
-heroImage: "../../assets/images/kamil-894I850Hyl0-unsplash.jpg"
+description: 'Discusses ways of evaluating the business value of software'
+pubDate: '2026-02-10'
+audience: 'Business'
+heroImage: '../../assets/images/kamil-894I850Hyl0-unsplash.jpg'
 photoCredit: 'Photo by <a href="https://unsplash.com/@kamil916?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kamil</a> on <a href="https://unsplash.com/photos/stacks-of-coins-increasing-in-height-from-left-to-right-894I850Hyl0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'
-canonical: "https://medium.com/@jmgant.cleareyeconsulting/what-is-business-value-148a6932e65"
+canonical: 'https://medium.com/@jmgant.cleareyeconsulting/what-is-business-value-148a6932e65'
 ---
 
 How much should software cost?
